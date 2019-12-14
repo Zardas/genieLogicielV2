@@ -11,13 +11,13 @@ using SystèmeVisonnementFilmsEnLigne.Logique;
 
 namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
-    public partial class FormCompteClient : Form
+    public partial class FormCompteMembre : Form
     {
-        Client client = new Client();
+        public Membre membre;
 
-        public FormCompteClient(Client client)
+        public FormCompteMembre(Membre membre)
         {
-            this.client = client;
+            this.membre = membre;
             InitializeComponent();
 
             this.username.Text = "Bla";

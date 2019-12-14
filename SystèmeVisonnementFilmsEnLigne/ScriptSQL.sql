@@ -1,5 +1,4 @@
 GO
-GO
 IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = N'SystèmeVisonnementFilmsEnLigneDB')
 	CREATE DATABASE SystèmeVisonnementFilmsEnLigneDB
 GO

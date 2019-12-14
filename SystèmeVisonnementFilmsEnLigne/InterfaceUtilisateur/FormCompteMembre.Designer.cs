@@ -1,6 +1,6 @@
 ﻿namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
-    partial class FormCompteClient
+    partial class FormCompteMembre
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCompteClient));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCompteMembre));
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();

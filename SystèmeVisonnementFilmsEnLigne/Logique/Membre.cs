@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using SystèmeVisonnementFilmsEnLigne.DAL;
@@ -97,17 +98,39 @@ public class Membre : Visiteur
             		get { return lsCatégorie; }
             		set { lsCatégorie = value; }
         	}
-	public Membre validerInfoConnexion(ref string identifiant, ref string motDePasse) {
+	public static Membre validerInfoConnexion(ref string identifiant, ref string motDePasse) {
+        
+            
+        DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+        ICompteMapper compteMapper = dataMapper.GetCompteMapper();
 
-            //TODO
-            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
-            ICompteMapper compteMapper = dataMapper.GetCompteMapper();
-
-            //compteMapper.Find(identifiant);
-
-    // to add your business logic code of the operation
-
-    return null;
+        DataTable tableMembre = compteMapper.FindAll();
+            
+        foreach(DataRow row in tableMembre.Rows)
+        {
+            //Dans mon système, l'identifiant peut-être l'username ou l'adresse mail
+            if ((row["nomUsager"].ToString() == identifiant || row["adresse"].ToString() == identifiant) && row["motDePasse"].ToString() == motDePasse)
+            {
+                    Membre member = new Membre();
+                    member.Numéro = row["numéro"].ToString();
+                    member.Nom = row["nom"].ToString();
+                    member.Prénom = row["prénom"].ToString();
+                    member.Adresse = row["adresse"].ToString();
+                    member.Téléphone = row["téléphone"].ToString();
+                    member.AdresseCourriel = row["adresseCourriel"].ToString();
+                    if(row["aAcceptéRecevoirNuveautés"].ToString() == "1")
+                    {
+                        member.AAcceptéRecevoirNuveautés = false;
+                    } else
+                    {
+                        member.AAcceptéRecevoirNuveautés = true;
+                    }
+                    member.NomUsager = row["nomUsager"].ToString();
+                    member.MotDePasse = row["motDePasse"].ToString();
+                    return member;    
+            }
+        }
+        return null;
     }
   
  

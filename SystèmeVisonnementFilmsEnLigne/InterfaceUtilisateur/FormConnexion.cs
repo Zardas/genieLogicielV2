@@ -25,12 +25,32 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 
         }
 
+        //Connexion
         private void inscriptionValidation_Click(object sender, EventArgs e)
         {
             // Test de la connexion
-            FormCompteClient formCompteClient = new FormCompteClient(new Logique.Client());
-            formCompteClient.ShowDialog();
-            this.Close();
+            string identifiant = inscriptionAdress.Text.ToString();
+            string mdp = inscriptionPassword.Text.ToString();
+
+            Membre membre = Membre.validerInfoConnexion(ref identifiant, ref mdp);
+
+            if(membre != null)
+            {
+                FormCompteMembre formCompteClient = new FormCompteMembre(membre);
+                formCompteClient.ShowDialog();
+                this.Close();
+            } else
+            {
+                //On change le texte des labels en rouge
+                inscriptionAdress.ForeColor = Color.FromArgb(240, 10, 10);
+                inscriptionPassword.ForeColor = Color.FromArgb(240, 10, 10);
+            }
+            
+        }
+
+        private void inscriptionAdress_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

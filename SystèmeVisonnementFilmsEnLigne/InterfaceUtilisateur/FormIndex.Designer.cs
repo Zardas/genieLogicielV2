@@ -57,6 +57,7 @@
             this.menuConnexion.Name = "menuConnexion";
             this.menuConnexion.Size = new System.Drawing.Size(86, 23);
             this.menuConnexion.Text = "Connexion";
+            this.menuConnexion.Click += new System.EventHandler(this.menuConnexion_Click);
             // 
             // menuInscription
             // 

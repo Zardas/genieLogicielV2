@@ -36,7 +36,7 @@
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
             this.dejaInscrit = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.inscriptionValidation = new System.Windows.Forms.Button();
+            this.connexionValidation = new System.Windows.Forms.Button();
             this.inscriptionPassword = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.inscriptionAdress = new System.Windows.Forms.Label();
@@ -120,18 +120,18 @@
             this.textBox5.Text = "Pas encore inscrit ? ";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // inscriptionValidation
+            // connexionValidation
             // 
-            this.inscriptionValidation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inscriptionValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inscriptionValidation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.inscriptionValidation.Location = new System.Drawing.Point(333, 203);
-            this.inscriptionValidation.Name = "inscriptionValidation";
-            this.inscriptionValidation.Size = new System.Drawing.Size(97, 35);
-            this.inscriptionValidation.TabIndex = 26;
-            this.inscriptionValidation.Text = "Connexion";
-            this.inscriptionValidation.UseVisualStyleBackColor = true;
-            this.inscriptionValidation.Click += new System.EventHandler(this.inscriptionValidation_Click);
+            this.connexionValidation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.connexionValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connexionValidation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.connexionValidation.Location = new System.Drawing.Point(333, 203);
+            this.connexionValidation.Name = "connexionValidation";
+            this.connexionValidation.Size = new System.Drawing.Size(97, 35);
+            this.connexionValidation.TabIndex = 26;
+            this.connexionValidation.Text = "Connexion";
+            this.connexionValidation.UseVisualStyleBackColor = true;
+            this.connexionValidation.Click += new System.EventHandler(this.inscriptionValidation_Click);
             // 
             // inscriptionPassword
             // 
@@ -168,6 +168,7 @@
             this.inscriptionAdress.Size = new System.Drawing.Size(112, 19);
             this.inscriptionAdress.TabIndex = 21;
             this.inscriptionAdress.Text = "example@domain.ca";
+            this.inscriptionAdress.Click += new System.EventHandler(this.inscriptionAdress_Click);
             // 
             // textBox2
             // 
@@ -204,7 +205,7 @@
             this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.dejaInscrit);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.inscriptionValidation);
+            this.Controls.Add(this.connexionValidation);
             this.Controls.Add(this.inscriptionPassword);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.inscriptionAdress);
@@ -232,7 +233,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
         private System.Windows.Forms.TextBox dejaInscrit;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button inscriptionValidation;
+        private System.Windows.Forms.Button connexionValidation;
         private System.Windows.Forms.Label inscriptionPassword;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label inscriptionAdress;

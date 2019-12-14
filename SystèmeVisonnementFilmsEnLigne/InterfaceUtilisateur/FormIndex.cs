@@ -51,5 +51,12 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             formInscription.ShowDialog();
             this.Close();
         }
+
+        private void menuConnexion_Click(object sender, EventArgs e)
+        {
+            FormConnexion formConnexion = new FormConnexion();
+            formConnexion.ShowDialog();
+            this.Close();
+        }
     }
 }
