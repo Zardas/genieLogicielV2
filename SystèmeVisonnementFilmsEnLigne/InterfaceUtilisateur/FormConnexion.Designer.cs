@@ -37,10 +37,10 @@
             this.dejaInscrit = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.connexionValidation = new System.Windows.Forms.Button();
-            this.inscriptionPassword = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.inscriptionAdress = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.inscriptionPasswordLabel = new System.Windows.Forms.Label();
+            this.inscriptionPassword = new System.Windows.Forms.TextBox();
+            this.inscriptionAdressLabel = new System.Windows.Forms.Label();
+            this.inscriptionAdress = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -133,54 +133,58 @@
             this.connexionValidation.UseVisualStyleBackColor = true;
             this.connexionValidation.Click += new System.EventHandler(this.inscriptionValidation_Click);
             // 
+            // inscriptionPasswordLabel
+            // 
+            this.inscriptionPasswordLabel.AutoSize = true;
+            this.inscriptionPasswordLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.inscriptionPasswordLabel.ForeColor = System.Drawing.Color.Black;
+            this.inscriptionPasswordLabel.Location = new System.Drawing.Point(309, 161);
+            this.inscriptionPasswordLabel.Name = "inscriptionPasswordLabel";
+            this.inscriptionPasswordLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.inscriptionPasswordLabel.Size = new System.Drawing.Size(83, 19);
+            this.inscriptionPasswordLabel.TabIndex = 25;
+            this.inscriptionPasswordLabel.Text = "Mot de passe :";
+            // 
             // inscriptionPassword
             // 
-            this.inscriptionPassword.AutoSize = true;
             this.inscriptionPassword.BackColor = System.Drawing.Color.White;
-            this.inscriptionPassword.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.inscriptionPassword.Location = new System.Drawing.Point(385, 145);
+            this.inscriptionPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionPassword.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionPassword.Location = new System.Drawing.Point(398, 161);
             this.inscriptionPassword.Name = "inscriptionPassword";
-            this.inscriptionPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.inscriptionPassword.Size = new System.Drawing.Size(74, 19);
-            this.inscriptionPassword.TabIndex = 25;
+            this.inscriptionPassword.Size = new System.Drawing.Size(100, 20);
+            this.inscriptionPassword.TabIndex = 24;
             this.inscriptionPassword.Text = "azs654qsJsd";
+            this.inscriptionPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inscriptionPassword.UseSystemPasswordChar = true;
             // 
-            // textBox4
+            // inscriptionAdressLabel
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox4.Location = new System.Drawing.Point(279, 148);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 13);
-            this.textBox4.TabIndex = 24;
-            this.textBox4.Text = "Mot de passe :";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.inscriptionAdressLabel.AutoSize = true;
+            this.inscriptionAdressLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.inscriptionAdressLabel.ForeColor = System.Drawing.Color.Black;
+            this.inscriptionAdressLabel.Location = new System.Drawing.Point(202, 108);
+            this.inscriptionAdressLabel.Name = "inscriptionAdressLabel";
+            this.inscriptionAdressLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.inscriptionAdressLabel.Size = new System.Drawing.Size(190, 19);
+            this.inscriptionAdressLabel.TabIndex = 21;
+            this.inscriptionAdressLabel.Text = "Adresse courriel ou nom d\'utilisateur : ";
+            this.inscriptionAdressLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.inscriptionAdressLabel.Click += new System.EventHandler(this.inscriptionAdress_Click);
             // 
             // inscriptionAdress
             // 
-            this.inscriptionAdress.AutoSize = true;
             this.inscriptionAdress.BackColor = System.Drawing.Color.White;
-            this.inscriptionAdress.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.inscriptionAdress.Location = new System.Drawing.Point(429, 101);
+            this.inscriptionAdress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionAdress.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionAdress.Location = new System.Drawing.Point(398, 107);
             this.inscriptionAdress.Name = "inscriptionAdress";
-            this.inscriptionAdress.Padding = new System.Windows.Forms.Padding(3);
-            this.inscriptionAdress.Size = new System.Drawing.Size(112, 19);
-            this.inscriptionAdress.TabIndex = 21;
+            this.inscriptionAdress.Size = new System.Drawing.Size(113, 20);
+            this.inscriptionAdress.TabIndex = 20;
             this.inscriptionAdress.Text = "example@domain.ca";
-            this.inscriptionAdress.Click += new System.EventHandler(this.inscriptionAdress_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Location = new System.Drawing.Point(241, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 13);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.Text = "Adresse courriel ou nom d\'utilisateur :";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.inscriptionAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
@@ -206,10 +210,10 @@
             this.Controls.Add(this.dejaInscrit);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.connexionValidation);
+            this.Controls.Add(this.inscriptionPasswordLabel);
             this.Controls.Add(this.inscriptionPassword);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.inscriptionAdressLabel);
             this.Controls.Add(this.inscriptionAdress);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip2);
@@ -234,10 +238,10 @@
         private System.Windows.Forms.TextBox dejaInscrit;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button connexionValidation;
-        private System.Windows.Forms.Label inscriptionPassword;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label inscriptionAdress;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label inscriptionPasswordLabel;
+        private System.Windows.Forms.TextBox inscriptionPassword;
+        private System.Windows.Forms.Label inscriptionAdressLabel;
+        private System.Windows.Forms.TextBox inscriptionAdress;
         private System.Windows.Forms.TextBox textBox1;
     }
 }
