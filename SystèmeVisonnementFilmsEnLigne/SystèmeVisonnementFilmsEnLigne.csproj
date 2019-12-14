@@ -149,8 +149,18 @@
     <Compile Include="Logique\Transaction.cs" />
     <Compile Include="Logique\Visionnement.cs" />
     <Compile Include="Logique\Visiteur.cs" />
+    <Compile Include="masterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystèmeVisonnementFilmsEnLigneDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystèmeVisonnementFilmsEnLigneDB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Util.cs" />
     <EmbeddedResource Include="InterfaceUtilisateur\FormModificationCompte.resx">
       <DependentUpon>FormModificationCompte.cs</DependentUpon>
@@ -179,6 +189,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="masterDataSet.xsc">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="masterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>masterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="masterDataSet.xss">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -188,6 +209,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SystèmeVisonnementFilmsEnLigneDB.xsc">
+      <DependentUpon>SystèmeVisonnementFilmsEnLigneDB.xsd</DependentUpon>
+    </None>
+    <None Include="SystèmeVisonnementFilmsEnLigneDB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystèmeVisonnementFilmsEnLigneDB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystèmeVisonnementFilmsEnLigneDB.xss">
+      <DependentUpon>SystèmeVisonnementFilmsEnLigneDB.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

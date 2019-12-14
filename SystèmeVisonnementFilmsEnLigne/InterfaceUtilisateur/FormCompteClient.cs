@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystèmeVisonnementFilmsEnLigne.Logique;
 
 namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
     public partial class FormCompteClient : Form
     {
-        public FormCompteClient()
+        Client client = new Client();
+
+        public FormCompteClient(Client client)
         {
+            this.client = client;
             InitializeComponent();
+
+            this.username.Text = "Bla";
         }
     }
 }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SystèmeVisonnementFilmsEnLigneDB" targetNamespace="http://tempuri.org/SystèmeVisonnementFilmsEnLigneDB.xsd" xmlns:mstns="http://tempuri.org/SystèmeVisonnementFilmsEnLigneDB.xsd" xmlns="http://tempuri.org/SystèmeVisonnementFilmsEnLigneDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SystèmeVisonnementFilmsEnLigneDB" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SystèmeVisonnementFilmsEnLigneDB (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SystèmeVisonnementFilmsEnLigne.Properties.Settings.GlobalReference.Default.SystèmeVisonnementFilmsEnLigneDB" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SystèmeVisonnementFilmsEnLigneDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SystèmeVisonnementFilmsEnLigneDB" msprop:Generator_UserDSName="SystèmeVisonnementFilmsEnLigneDB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -131,6 +131,7 @@
             this.inscriptionValidation.TabIndex = 26;
             this.inscriptionValidation.Text = "Connexion";
             this.inscriptionValidation.UseVisualStyleBackColor = true;
+            this.inscriptionValidation.Click += new System.EventHandler(this.inscriptionValidation_Click);
             // 
             // inscriptionPassword
             // 

@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SystèmeVisonnementFilmsEnLigne.DAL;
+
 namespace SystèmeVisonnementFilmsEnLigne.Logique
 {
 public class Membre : Visiteur
@@ -95,9 +97,14 @@ public class Membre : Visiteur
             		get { return lsCatégorie; }
             		set { lsCatégorie = value; }
         	}
-	public Membre validerInfoConnexion(ref string identifiant, ref string motDePasse)
-    
-    {
+	public Membre validerInfoConnexion(ref string identifiant, ref string motDePasse) {
+
+            //TODO
+            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+            ICompteMapper compteMapper = dataMapper.GetCompteMapper();
+
+            //compteMapper.Find(identifiant);
+
     // to add your business logic code of the operation
 
     return null;

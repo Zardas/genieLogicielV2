@@ -7,7 +7,7 @@ namespace SystèmeVisonnementFilmsEnLigne.Logique
 {
 public class Client : Membre
  {
-	
+
  
  }
 }	

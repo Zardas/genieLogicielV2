@@ -44,5 +44,13 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             formInscription.ShowDialog();
             this.Close();
         }
+
+        private void inscriptionValidation_Click(object sender, EventArgs e)
+        {
+            // Test de l'inscription
+            FormCompteClient formCompteClient = new FormCompteClient(new Logique.Client());
+            formCompteClient.ShowDialog();
+            this.Close();
+        }
     }
 }

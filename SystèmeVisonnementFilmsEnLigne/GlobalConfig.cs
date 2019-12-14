@@ -13,6 +13,7 @@ namespace SystèmeVisonnementFilmsEnLigne
         public static string getConnectionString()
         {
             return "Data Source=.;Initial Catalog=SystèmeVisonnementFilmsEnLigneDB;Trusted_Connection=Yes";
+            //return "Data Source=(local);Initial Catalog=SystèmeVisonnementFilmsEnLigneDB;Trusted_Connection=Yes";
         }
 
         public static MapperType getMapperType()

@@ -199,6 +199,7 @@
             this.inscriptionValidation.TabIndex = 16;
             this.inscriptionValidation.Text = "Inscription";
             this.inscriptionValidation.UseVisualStyleBackColor = true;
+            this.inscriptionValidation.Click += new System.EventHandler(this.inscriptionValidation_Click);
             // 
             // textBox5
             // 

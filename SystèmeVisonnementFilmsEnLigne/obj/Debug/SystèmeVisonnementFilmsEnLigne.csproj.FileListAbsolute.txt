@@ -30,3 +30,6 @@ C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnemen
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.csproj.CoreCompileInputs.cache
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.exe
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.pdb
+C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormModificationCompte.resources
+C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormCompteClient.resources
+C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormConnexion.resources
