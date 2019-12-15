@@ -34,7 +34,6 @@
             this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
-            this.dejaInscrit = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.connexionValidation = new System.Windows.Forms.Button();
             this.inscriptionPasswordLabel = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.inscriptionAdressLabel = new System.Windows.Forms.Label();
             this.inscriptionAdress = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,18 +95,6 @@
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
-            // 
-            // dejaInscrit
-            // 
-            this.dejaInscrit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.dejaInscrit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dejaInscrit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dejaInscrit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dejaInscrit.Location = new System.Drawing.Point(389, 272);
-            this.dejaInscrit.Name = "dejaInscrit";
-            this.dejaInscrit.Size = new System.Drawing.Size(100, 13);
-            this.dejaInscrit.TabIndex = 28;
-            this.dejaInscrit.Text = "Inscription";
             // 
             // textBox5
             // 
@@ -201,13 +189,24 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(389, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Inscription";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.dejaInscrit);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.connexionValidation);
             this.Controls.Add(this.inscriptionPasswordLabel);
@@ -235,7 +234,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuInscripion;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
-        private System.Windows.Forms.TextBox dejaInscrit;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button connexionValidation;
         private System.Windows.Forms.Label inscriptionPasswordLabel;
@@ -243,5 +241,6 @@
         private System.Windows.Forms.Label inscriptionAdressLabel;
         private System.Windows.Forms.TextBox inscriptionAdress;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

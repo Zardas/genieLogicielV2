@@ -144,8 +144,9 @@ public class Membre : Visiteur
         DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
         IMembreMapper membreMapper = dataMapper.GetMembreMapper();
 
+            //Le find mis à disposition par le DAL demande le GUID du membre, que nous n'avons pas à ce stade
         DataTable tableMembre = membreMapper.FindAll();
-            
+
         foreach(DataRow row in tableMembre.Rows)
         {
             //Dans mon système, l'identifiant peut-être l'username ou l'adresse mail
@@ -194,6 +195,15 @@ public class Membre : Visiteur
             return null;
         }
  
+        /*public static DataTable testTable()
+        {
+            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+            IMembreMapper membreMapper = dataMapper.GetMembreMapper();
+
+            DataTable tableMembre = membreMapper.FindAll();
+
+            return tableMembre;
+        }*/
  }
 }	
        

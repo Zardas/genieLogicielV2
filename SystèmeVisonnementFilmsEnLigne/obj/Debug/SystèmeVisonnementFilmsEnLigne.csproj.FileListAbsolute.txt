@@ -59,3 +59,4 @@ C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnemen
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.csproj.CopyComplete
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.csprojAssemblyReference.cache
+C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormAjouterFilm.resources

@@ -39,7 +39,6 @@
             this.inscriptionAdressLabel = new System.Windows.Forms.Label();
             this.inscriptionValidation = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dejaInscrit = new System.Windows.Forms.TextBox();
             this.inscriptionPasswordLabel = new System.Windows.Forms.Label();
             this.inscriptionPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.inscriptionTelephone = new System.Windows.Forms.TextBox();
             this.accepteRecevoirNouvautes = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,18 +174,6 @@
             this.textBox5.TabIndex = 17;
             this.textBox5.Text = "Déjà inscrit ? ";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // dejaInscrit
-            // 
-            this.dejaInscrit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.dejaInscrit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dejaInscrit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dejaInscrit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dejaInscrit.Location = new System.Drawing.Point(389, 329);
-            this.dejaInscrit.Name = "dejaInscrit";
-            this.dejaInscrit.Size = new System.Drawing.Size(100, 13);
-            this.dejaInscrit.TabIndex = 18;
-            this.dejaInscrit.Text = "Connexion";
             // 
             // inscriptionPasswordLabel
             // 
@@ -351,12 +339,24 @@
             this.accepteRecevoirNouvautes.Text = "J\'accepte de recevoir des nouvautés";
             this.accepteRecevoirNouvautes.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(389, 324);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Connexion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormInscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.accepteRecevoirNouvautes);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.inscriptionAdressIRL);
@@ -370,7 +370,6 @@
             this.Controls.Add(this.inscriptionPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.usernameInscription);
-            this.Controls.Add(this.dejaInscrit);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.inscriptionValidation);
             this.Controls.Add(this.inscriptionAdressLabel);
@@ -401,7 +400,6 @@
         private System.Windows.Forms.Label inscriptionAdressLabel;
         private System.Windows.Forms.Button inscriptionValidation;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox dejaInscrit;
         private System.Windows.Forms.Label inscriptionPasswordLabel;
         private System.Windows.Forms.TextBox inscriptionPassword;
         private System.Windows.Forms.Label label2;
@@ -415,5 +413,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox inscriptionTelephone;
         private System.Windows.Forms.CheckBox accepteRecevoirNouvautes;
+        private System.Windows.Forms.Button button1;
     }
 }

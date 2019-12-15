@@ -52,5 +52,14 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
         {
 
         }
+
+        //Passer à l'inscription
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormInscription formInscription = new FormInscription();
+            formInscription.ShowDialog();
+            this.Close();
+
+        }
     }
 }

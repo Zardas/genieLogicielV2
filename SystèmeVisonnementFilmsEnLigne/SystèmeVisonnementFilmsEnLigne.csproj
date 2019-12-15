@@ -101,6 +101,12 @@
     <Compile Include="DAL\MSSQL\VisionnementMapper.cs" />
     <Compile Include="DAL\MSSQL\VisiteurMapper.cs" />
     <Compile Include="GlobalConfig.cs" />
+    <Compile Include="InterfaceUtilisateur\FormAjouterFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\FormAjouterFilm.Designer.cs">
+      <DependentUpon>FormAjouterFilm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceUtilisateur\FormModificationCompte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
       <DependentUpon>SystèmeVisonnementFilmsEnLigneDB.xsd</DependentUpon>
     </Compile>
     <Compile Include="Util.cs" />
+    <EmbeddedResource Include="InterfaceUtilisateur\FormAjouterFilm.resx">
+      <DependentUpon>FormAjouterFilm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\FormModificationCompte.resx">
       <DependentUpon>FormModificationCompte.cs</DependentUpon>
     </EmbeddedResource>

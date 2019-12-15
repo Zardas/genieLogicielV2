@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SystèmeVisonnementFilmsEnLigne.DAL;
+
 namespace SystèmeVisonnementFilmsEnLigne.Logique
 {
 public class Film : DomainObject
@@ -145,8 +147,53 @@ public class Film : DomainObject
 
     return 0;
     }
-  
+
+        public Film()
+        {
+
+        }
+
+        //Override
+        public Film(string titre, int duree, float coutAchat, float coutVisionnement, string motsCles, string realisateur, string producteurs, string maisonDeProduction, string acteurs, string synopsis)
+        {
+            this.Titre = titre;
+            this.Durée = duree;
+            this.CoûtAchat = coutAchat;
+            this.CoûtVisionnement = coutVisionnement;
+            this.MotsClès = motsCles;
+            this.mRéalisateurs = realisateur;
+            this.Producteurs = producteurs;
+            this.MaisonsProduction = maisonDeProduction;
+            this.Synopsis = synopsis;
+            this.Acteurs = acteurs;
  
- }
+        }
+
+        //Ajout d'un membre dans la base (retourne le succès ou non de l'ajout)
+        public static int ajoutFilm(string titre, int duree, float coutAchat, float coutVisionnement, string motsCles, string realisateur, string producteurs, string maisonDeProduction, string acteurs, string synopsis)
+        {
+            //Verification de la validité des informations rentrées (je considère que les coûts peuvent être de 0)
+            if (titre != ""
+                && duree != 0
+                && motsCles != ""
+                && realisateur != ""
+                && producteurs != ""
+                && maisonDeProduction != ""
+                && acteurs != ""
+                && synopsis != "")
+            {
+                DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+                IFilmMapper filmMapper = dataMapper.GetFilmMapper();
+
+                Film nouveauFilm = new Film(titre, duree, coutAchat, coutVisionnement, motsCles, realisateur, producteurs, maisonDeProduction, acteurs, synopsis);
+
+                int res = filmMapper.Insert(nouveauFilm);
+
+                return res;
+            }
+
+            return -1;
+        }
+    }
 }	
        

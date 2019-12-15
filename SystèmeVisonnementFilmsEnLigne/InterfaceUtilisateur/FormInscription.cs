@@ -80,5 +80,13 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             }
             
         }
+
+        //Passage à la connexion
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormConnexion formConnexion = new FormConnexion();
+            formConnexion.ShowDialog();
+            this.Close();
+        }
     }
 }

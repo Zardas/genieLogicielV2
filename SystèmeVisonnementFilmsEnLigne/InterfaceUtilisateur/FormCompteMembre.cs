@@ -18,9 +18,11 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
         public FormCompteMembre(Membre membre)
         {
             this.membre = membre;
+
             InitializeComponent();
 
             this.username.Text = membre.NomUsager;
+
         }
 
         private void menuAccueil_Click(object sender, EventArgs e)
@@ -28,6 +30,14 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             FormIndex formIndex = new FormIndex();
             formIndex.ShowDialog();
             this.Close();
+        }
+
+
+        //Ajout film
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormAjouterFilm formAjouterFilm = new FormAjouterFilm();
+            formAjouterFilm.ShowDialog();
         }
     }
 }
