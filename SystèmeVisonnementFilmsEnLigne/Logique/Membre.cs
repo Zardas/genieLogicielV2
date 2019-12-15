@@ -98,41 +98,101 @@ public class Membre : Visiteur
             		get { return lsCatégorie; }
             		set { lsCatégorie = value; }
         	}
-	public static Membre validerInfoConnexion(ref string identifiant, ref string motDePasse) {
+
+
+        public Membre()
+        {
+
+
+        }
+        //Override
+        public Membre(string nom, string prenom, string adresse, string telephone, string mail, bool aAccepterRecevoirNouvautes, string username, string password)
+        {
+            this.Nom = nom;
+            this.Prénom = prenom;
+            this.Téléphone = telephone;
+            this.AdresseCourriel = mail;
+            this.AAcceptéRecevoirNuveautés = aAccepterRecevoirNouvautes;
+            this.NomUsager = username;
+            this.MotDePasse = password;
+        }
+
+        //Override dans la cas où on a aAccepterRecevoirNouvautes sous la forme d'une string
+        public Membre(string numero, string nom, string prenom, string adresse, string telephone, string mail, string aAccepterRecevoirNouvautes, string username, string password)
+        {
+            this.Numéro = numero;
+            this.Nom = nom;
+            this.Prénom = prenom;
+            this.Téléphone = telephone;
+            this.AdresseCourriel = mail;
+            if(aAccepterRecevoirNouvautes == "1")
+            {
+                this.AAcceptéRecevoirNuveautés = true;
+            } else
+            {
+                this.AAcceptéRecevoirNuveautés = false;
+            }
+            this.NomUsager = username;
+            this.MotDePasse = password;
+        }
+
+
+        //Validation des infos de connexion
+        public static Membre validerInfoConnexion(ref string identifiant, ref string motDePasse) {
         
             
         DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
-        ICompteMapper compteMapper = dataMapper.GetCompteMapper();
+        IMembreMapper membreMapper = dataMapper.GetMembreMapper();
 
-        DataTable tableMembre = compteMapper.FindAll();
+        DataTable tableMembre = membreMapper.FindAll();
             
         foreach(DataRow row in tableMembre.Rows)
         {
             //Dans mon système, l'identifiant peut-être l'username ou l'adresse mail
             if ((row["nomUsager"].ToString() == identifiant || row["adresse"].ToString() == identifiant) && row["motDePasse"].ToString() == motDePasse)
             {
-                    Membre member = new Membre();
-                    member.Numéro = row["numéro"].ToString();
-                    member.Nom = row["nom"].ToString();
-                    member.Prénom = row["prénom"].ToString();
-                    member.Adresse = row["adresse"].ToString();
-                    member.Téléphone = row["téléphone"].ToString();
-                    member.AdresseCourriel = row["adresseCourriel"].ToString();
-                    if(row["aAcceptéRecevoirNuveautés"].ToString() == "1")
-                    {
-                        member.AAcceptéRecevoirNuveautés = false;
-                    } else
-                    {
-                        member.AAcceptéRecevoirNuveautés = true;
-                    }
-                    member.NomUsager = row["nomUsager"].ToString();
-                    member.MotDePasse = row["motDePasse"].ToString();
-                    return member;    
+
+                    return new Membre(
+                        row["numéro"].ToString(),
+                        row["nom"].ToString(),
+                        row["prénom"].ToString(),
+                        row["adresse"].ToString(),
+                        row["téléphone"].ToString(),
+                        row["adresseCourriel"].ToString(),
+                        row["aAcceptéRecevoirNuveautés"].ToString(),
+                        row["nomUsager"].ToString(),
+                        row["motDePasse"].ToString()
+                        ); 
             }
         }
         return null;
     }
   
+
+        //Ajout d'un membre dans la base
+        public static Membre ajoutMembre(string mail, string username, string password, string nom, string prenom, string telephone, string adresse, bool accepteRecevoirNouvautes)
+        {
+            //Verification de la validité des informations rentrées
+            if (mail.Contains("@") && mail.Contains(".")
+                && username != ""
+                && password != ""
+                && nom != ""
+                && prenom != ""
+                && telephone != ""
+                && adresse != "")
+            {
+                DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+                IMembreMapper membreMapper = dataMapper.GetMembreMapper();
+
+                Membre nouveauMembre = new Membre(nom,prenom,adresse,telephone,mail, accepteRecevoirNouvautes, username,password);
+
+                membreMapper.Insert(nouveauMembre);
+
+                return nouveauMembre;
+            }
+
+            return null;
+        }
  
  }
 }	

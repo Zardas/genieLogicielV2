@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystèmeVisonnementFilmsEnLigne.Logique;
 
 namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
@@ -47,10 +48,37 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 
         private void inscriptionValidation_Click(object sender, EventArgs e)
         {
-            // Test de l'inscription
-            FormCompteMembre formCompteClient = new FormCompteMembre(new Logique.Client());
-            formCompteClient.ShowDialog();
-            this.Close();
+            //Inscription
+            string mail = inscriptionAdress.Text.ToString();
+            string username = usernameInscription.Text.ToString();
+            string password = inscriptionPassword.Text.ToString();
+            string nom = inscriptionName.Text.ToString();
+            string prenom = inscriptionPrenom.Text.ToString();
+            string telephone = inscriptionTelephone.Text.ToString();
+            string adresse = inscriptionAdressIRL.Text.ToString();
+            bool aAccepterRecevoirNouvautes = accepteRecevoirNouvautes.Checked;
+
+            //Vérifie la validité des paramètres rentrés, et ajoute le membre dans la BDD
+            Membre nouveauMembre = Membre.ajoutMembre(mail, username, password, nom, prenom, telephone, adresse, aAccepterRecevoirNouvautes);
+
+            if(nouveauMembre != null) //L'inscription a été validée coté Logic
+            {
+                // Test de l'inscription
+                FormCompteMembre formCompteClient = new FormCompteMembre(nouveauMembre);
+                formCompteClient.ShowDialog();
+                this.Close();
+            } else
+            {
+                Color errorColor = Color.FromArgb(240, 10, 10);
+                inscriptionAdress.ForeColor = errorColor;
+                usernameInscription.ForeColor = errorColor;
+                inscriptionPassword.ForeColor = errorColor;
+                inscriptionName.ForeColor = errorColor;
+                inscriptionPrenom.ForeColor = errorColor;
+                inscriptionTelephone.ForeColor = errorColor;
+                inscriptionAdressIRL.ForeColor = errorColor;
+            }
+            
         }
     }
 }

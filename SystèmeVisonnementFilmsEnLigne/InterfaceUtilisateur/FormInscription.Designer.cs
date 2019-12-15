@@ -43,15 +43,16 @@
             this.inscriptionPasswordLabel = new System.Windows.Forms.Label();
             this.inscriptionPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.usernameInscription = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inscriptionPrenom = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.inscriptionName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.inscriptionAdressIRL = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.inscriptionTelephone = new System.Windows.Forms.TextBox();
+            this.accepteRecevoirNouvautes = new System.Windows.Forms.CheckBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,7 +155,7 @@
             this.inscriptionValidation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inscriptionValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inscriptionValidation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.inscriptionValidation.Location = new System.Drawing.Point(333, 253);
+            this.inscriptionValidation.Location = new System.Drawing.Point(333, 278);
             this.inscriptionValidation.Name = "inscriptionValidation";
             this.inscriptionValidation.Size = new System.Drawing.Size(97, 35);
             this.inscriptionValidation.TabIndex = 16;
@@ -167,7 +168,7 @@
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox5.Location = new System.Drawing.Point(283, 304);
+            this.textBox5.Location = new System.Drawing.Point(283, 329);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 13);
             this.textBox5.TabIndex = 17;
@@ -180,7 +181,7 @@
             this.dejaInscrit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dejaInscrit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dejaInscrit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dejaInscrit.Location = new System.Drawing.Point(389, 304);
+            this.dejaInscrit.Location = new System.Drawing.Point(389, 329);
             this.dejaInscrit.Name = "dejaInscrit";
             this.dejaInscrit.Size = new System.Drawing.Size(100, 13);
             this.dejaInscrit.TabIndex = 18;
@@ -225,18 +226,18 @@
             this.label2.Text = "Nom d\'utilisateur : ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // usernameInscription
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.Location = new System.Drawing.Point(270, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 20);
-            this.textBox2.TabIndex = 26;
-            this.textBox2.Text = "Jean-Luc Picard";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.usernameInscription.BackColor = System.Drawing.Color.White;
+            this.usernameInscription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernameInscription.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.usernameInscription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.usernameInscription.Location = new System.Drawing.Point(270, 139);
+            this.usernameInscription.Name = "usernameInscription";
+            this.usernameInscription.Size = new System.Drawing.Size(113, 20);
+            this.usernameInscription.TabIndex = 26;
+            this.usernameInscription.Text = "Jean-Luc Picard";
+            this.usernameInscription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -250,18 +251,18 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Prénom :";
             // 
-            // textBox3
+            // inscriptionPrenom
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox3.Location = new System.Drawing.Point(217, 213);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 32;
-            this.textBox3.Text = "Picard";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inscriptionPrenom.BackColor = System.Drawing.Color.White;
+            this.inscriptionPrenom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionPrenom.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionPrenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionPrenom.Location = new System.Drawing.Point(217, 213);
+            this.inscriptionPrenom.Name = "inscriptionPrenom";
+            this.inscriptionPrenom.Size = new System.Drawing.Size(100, 20);
+            this.inscriptionPrenom.TabIndex = 32;
+            this.inscriptionPrenom.Text = "Picard";
+            this.inscriptionPrenom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -276,18 +277,18 @@
             this.label4.Text = "Nom : ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox4
+            // inscriptionName
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.Location = new System.Drawing.Point(217, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(113, 20);
-            this.textBox4.TabIndex = 30;
-            this.textBox4.Text = "Jean-Luc";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inscriptionName.BackColor = System.Drawing.Color.White;
+            this.inscriptionName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionName.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionName.Location = new System.Drawing.Point(217, 187);
+            this.inscriptionName.Name = "inscriptionName";
+            this.inscriptionName.Size = new System.Drawing.Size(113, 20);
+            this.inscriptionName.TabIndex = 30;
+            this.inscriptionName.Text = "Jean-Luc";
+            this.inscriptionName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -301,18 +302,18 @@
             this.label5.TabIndex = 37;
             this.label5.Text = "Adresse :";
             // 
-            // textBox6
+            // inscriptionAdressIRL
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox6.Location = new System.Drawing.Point(486, 213);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 36;
-            this.textBox6.Text = "Far away";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inscriptionAdressIRL.BackColor = System.Drawing.Color.White;
+            this.inscriptionAdressIRL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionAdressIRL.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionAdressIRL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionAdressIRL.Location = new System.Drawing.Point(486, 213);
+            this.inscriptionAdressIRL.Name = "inscriptionAdressIRL";
+            this.inscriptionAdressIRL.Size = new System.Drawing.Size(100, 20);
+            this.inscriptionAdressIRL.TabIndex = 36;
+            this.inscriptionAdressIRL.Text = "Far away";
+            this.inscriptionAdressIRL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -327,17 +328,28 @@
             this.label6.Text = "Numéro de téléphone : ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox7
+            // inscriptionTelephone
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox7.Location = new System.Drawing.Point(486, 187);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(113, 20);
-            this.textBox7.TabIndex = 34;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inscriptionTelephone.BackColor = System.Drawing.Color.White;
+            this.inscriptionTelephone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inscriptionTelephone.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.inscriptionTelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inscriptionTelephone.Location = new System.Drawing.Point(486, 187);
+            this.inscriptionTelephone.Name = "inscriptionTelephone";
+            this.inscriptionTelephone.Size = new System.Drawing.Size(113, 20);
+            this.inscriptionTelephone.TabIndex = 34;
+            this.inscriptionTelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // accepteRecevoirNouvautes
+            // 
+            this.accepteRecevoirNouvautes.AutoSize = true;
+            this.accepteRecevoirNouvautes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.accepteRecevoirNouvautes.Location = new System.Drawing.Point(400, 239);
+            this.accepteRecevoirNouvautes.Name = "accepteRecevoirNouvautes";
+            this.accepteRecevoirNouvautes.Size = new System.Drawing.Size(201, 17);
+            this.accepteRecevoirNouvautes.TabIndex = 39;
+            this.accepteRecevoirNouvautes.Text = "J\'accepte de recevoir des nouvautés";
+            this.accepteRecevoirNouvautes.UseVisualStyleBackColor = true;
             // 
             // FormInscription
             // 
@@ -345,18 +357,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.accepteRecevoirNouvautes);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.inscriptionAdressIRL);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.inscriptionTelephone);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.inscriptionPrenom);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.inscriptionName);
             this.Controls.Add(this.inscriptionPasswordLabel);
             this.Controls.Add(this.inscriptionPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.usernameInscription);
             this.Controls.Add(this.dejaInscrit);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.inscriptionValidation);
@@ -392,14 +405,15 @@
         private System.Windows.Forms.Label inscriptionPasswordLabel;
         private System.Windows.Forms.TextBox inscriptionPassword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox usernameInscription;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inscriptionPrenom;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox inscriptionName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox inscriptionAdressIRL;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox inscriptionTelephone;
+        private System.Windows.Forms.CheckBox accepteRecevoirNouvautes;
     }
 }

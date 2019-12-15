@@ -20,7 +20,14 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             this.membre = membre;
             InitializeComponent();
 
-            this.username.Text = "Bla";
+            this.username.Text = membre.NomUsager;
+        }
+
+        private void menuAccueil_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
         }
     }
 }

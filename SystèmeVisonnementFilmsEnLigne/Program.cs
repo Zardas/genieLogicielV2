@@ -17,7 +17,7 @@ namespace SystèmeVisonnementFilmsEnLigne
             var fileContent = File.ReadAllText("../../ScriptSQL.sql");
             var sqlqueries = fileContent.Split(new[] { "GO" }, StringSplitOptions.RemoveEmptyEntries);
 
-            SqlConnection connexion = new SqlConnection("Data Source=(local);Initial Catalog=SystèmeVisonnementFilmsEnLigneDB;Integrated Security=SSPI");
+            SqlConnection connexion = new SqlConnection(GlobalConfig.getConnectionString());
             SqlCommand cmd = new SqlCommand("query", connexion);
 
             connexion.Open();

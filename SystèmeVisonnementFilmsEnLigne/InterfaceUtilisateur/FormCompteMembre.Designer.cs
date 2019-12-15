@@ -104,6 +104,7 @@
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
+            this.menuAccueil.Click += new System.EventHandler(this.menuAccueil_Click);
             // 
             // pictureBox1
             // 
@@ -276,7 +277,7 @@
             this.textBox8.TabIndex = 25;
             this.textBox8.Text = "Modifier mon compte >";
             // 
-            // FormCompteClient
+            // FormCompteMembre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -298,7 +299,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip2);
-            this.Name = "FormCompteClient";
+            this.Name = "FormCompteMembre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Compte Client";
             this.menuStrip2.ResumeLayout(false);
