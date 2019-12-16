@@ -34,15 +34,17 @@
             this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
-            this.inscriptionPassword = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.inscriptionUsername = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.inscriptionAdress = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.modificationPassword2 = new System.Windows.Forms.Label();
+            this.modificationPassword = new System.Windows.Forms.TextBox();
+            this.modificationUsername2 = new System.Windows.Forms.Label();
+            this.modificationUsername = new System.Windows.Forms.TextBox();
+            this.modificationAdress2 = new System.Windows.Forms.Label();
+            this.modificationAdress = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.inscriptionValidation = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.modificationValidation = new System.Windows.Forms.Button();
+            this.accepteRecevoirNouvautes = new System.Windows.Forms.CheckBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.messageValidation = new System.Windows.Forms.TextBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,77 +99,78 @@
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
             // 
-            // inscriptionPassword
+            // modificationPassword2
             // 
-            this.inscriptionPassword.AutoSize = true;
-            this.inscriptionPassword.BackColor = System.Drawing.Color.White;
-            this.inscriptionPassword.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.inscriptionPassword.Location = new System.Drawing.Point(384, 185);
-            this.inscriptionPassword.Name = "inscriptionPassword";
-            this.inscriptionPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.inscriptionPassword.Size = new System.Drawing.Size(74, 19);
-            this.inscriptionPassword.TabIndex = 21;
-            this.inscriptionPassword.Text = "azs654qsJsd";
+            this.modificationPassword2.AutoSize = true;
+            this.modificationPassword2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.modificationPassword2.ForeColor = System.Drawing.Color.Black;
+            this.modificationPassword2.Location = new System.Drawing.Point(294, 181);
+            this.modificationPassword2.Name = "modificationPassword2";
+            this.modificationPassword2.Padding = new System.Windows.Forms.Padding(3);
+            this.modificationPassword2.Size = new System.Drawing.Size(83, 19);
+            this.modificationPassword2.TabIndex = 21;
+            this.modificationPassword2.Text = "Mot de passe :";
             // 
-            // textBox4
+            // modificationPassword
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox4.Location = new System.Drawing.Point(278, 188);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 13);
-            this.textBox4.TabIndex = 20;
-            this.textBox4.Text = "Mot de passe :";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.modificationPassword.BackColor = System.Drawing.Color.White;
+            this.modificationPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.modificationPassword.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.modificationPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.modificationPassword.Location = new System.Drawing.Point(383, 181);
+            this.modificationPassword.Name = "modificationPassword";
+            this.modificationPassword.Size = new System.Drawing.Size(100, 13);
+            this.modificationPassword.TabIndex = 20;
+            this.modificationPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.modificationPassword.UseSystemPasswordChar = true;
             // 
-            // inscriptionUsername
+            // modificationUsername2
             // 
-            this.inscriptionUsername.AutoSize = true;
-            this.inscriptionUsername.BackColor = System.Drawing.Color.White;
-            this.inscriptionUsername.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.inscriptionUsername.Location = new System.Drawing.Point(384, 143);
-            this.inscriptionUsername.Name = "inscriptionUsername";
-            this.inscriptionUsername.Padding = new System.Windows.Forms.Padding(3);
-            this.inscriptionUsername.Size = new System.Drawing.Size(90, 19);
-            this.inscriptionUsername.TabIndex = 19;
-            this.inscriptionUsername.Text = "Jean-Luc Picard";
+            this.modificationUsername2.AutoSize = true;
+            this.modificationUsername2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.modificationUsername2.ForeColor = System.Drawing.Color.Black;
+            this.modificationUsername2.Location = new System.Drawing.Point(281, 145);
+            this.modificationUsername2.Name = "modificationUsername2";
+            this.modificationUsername2.Padding = new System.Windows.Forms.Padding(3);
+            this.modificationUsername2.Size = new System.Drawing.Size(96, 19);
+            this.modificationUsername2.TabIndex = 19;
+            this.modificationUsername2.Text = "Nom d\'utilisateur :";
             // 
-            // textBox3
+            // modificationUsername
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox3.Location = new System.Drawing.Point(278, 146);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 13);
-            this.textBox3.TabIndex = 18;
-            this.textBox3.Text = "Nom d\'utilisateur :";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.modificationUsername.BackColor = System.Drawing.Color.White;
+            this.modificationUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.modificationUsername.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.modificationUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.modificationUsername.Location = new System.Drawing.Point(383, 145);
+            this.modificationUsername.Name = "modificationUsername";
+            this.modificationUsername.Size = new System.Drawing.Size(100, 13);
+            this.modificationUsername.TabIndex = 18;
+            this.modificationUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // inscriptionAdress
+            // modificationAdress2
             // 
-            this.inscriptionAdress.AutoSize = true;
-            this.inscriptionAdress.BackColor = System.Drawing.Color.White;
-            this.inscriptionAdress.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.inscriptionAdress.Location = new System.Drawing.Point(384, 103);
-            this.inscriptionAdress.Name = "inscriptionAdress";
-            this.inscriptionAdress.Padding = new System.Windows.Forms.Padding(3);
-            this.inscriptionAdress.Size = new System.Drawing.Size(112, 19);
-            this.inscriptionAdress.TabIndex = 17;
-            this.inscriptionAdress.Text = "example@domain.ca";
+            this.modificationAdress2.AutoSize = true;
+            this.modificationAdress2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.modificationAdress2.ForeColor = System.Drawing.Color.Black;
+            this.modificationAdress2.Location = new System.Drawing.Point(275, 108);
+            this.modificationAdress2.Name = "modificationAdress2";
+            this.modificationAdress2.Padding = new System.Windows.Forms.Padding(3);
+            this.modificationAdress2.Size = new System.Drawing.Size(102, 19);
+            this.modificationAdress2.TabIndex = 17;
+            this.modificationAdress2.Text = "Adresse courrielle :";
             // 
-            // textBox2
+            // modificationAdress
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Location = new System.Drawing.Point(278, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 13);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "Adresse courriel :";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.modificationAdress.BackColor = System.Drawing.Color.White;
+            this.modificationAdress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.modificationAdress.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.modificationAdress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.modificationAdress.Location = new System.Drawing.Point(383, 108);
+            this.modificationAdress.Name = "modificationAdress";
+            this.modificationAdress.Size = new System.Drawing.Size(100, 13);
+            this.modificationAdress.TabIndex = 16;
+            this.modificationAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox1
             // 
@@ -183,28 +186,50 @@
             this.textBox1.Text = "Modification compte client";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // inscriptionValidation
+            // modificationValidation
             // 
-            this.inscriptionValidation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inscriptionValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inscriptionValidation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.inscriptionValidation.Location = new System.Drawing.Point(337, 228);
-            this.inscriptionValidation.Name = "inscriptionValidation";
-            this.inscriptionValidation.Size = new System.Drawing.Size(86, 29);
-            this.inscriptionValidation.TabIndex = 23;
-            this.inscriptionValidation.Text = "Modifier";
-            this.inscriptionValidation.UseVisualStyleBackColor = true;
+            this.modificationValidation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificationValidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificationValidation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.modificationValidation.Location = new System.Drawing.Point(342, 260);
+            this.modificationValidation.Name = "modificationValidation";
+            this.modificationValidation.Size = new System.Drawing.Size(86, 29);
+            this.modificationValidation.TabIndex = 23;
+            this.modificationValidation.Text = "Modifier";
+            this.modificationValidation.UseVisualStyleBackColor = true;
+            this.modificationValidation.Click += new System.EventHandler(this.modificationValidation_Click);
             // 
-            // textBox5
+            // accepteRecevoirNouvautes
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(10, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 14);
-            this.textBox5.TabIndex = 24;
-            this.textBox5.Text = "< Retour au compte";
+            this.accepteRecevoirNouvautes.AutoSize = true;
+            this.accepteRecevoirNouvautes.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.accepteRecevoirNouvautes.Location = new System.Drawing.Point(278, 224);
+            this.accepteRecevoirNouvautes.Name = "accepteRecevoirNouvautes";
+            this.accepteRecevoirNouvautes.Size = new System.Drawing.Size(201, 17);
+            this.accepteRecevoirNouvautes.TabIndex = 40;
+            this.accepteRecevoirNouvautes.Text = "J\'accepte de recevoir des nouvautés";
+            this.accepteRecevoirNouvautes.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 60);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(135, 23);
+            this.button3.TabIndex = 41;
+            this.button3.Text = "< Retour à mon compte";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // messageValidation
+            // 
+            this.messageValidation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
+            this.messageValidation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.messageValidation.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.messageValidation.Location = new System.Drawing.Point(10, 311);
+            this.messageValidation.Name = "messageValidation";
+            this.messageValidation.Size = new System.Drawing.Size(760, 13);
+            this.messageValidation.TabIndex = 42;
+            this.messageValidation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FormModificationCompte
             // 
@@ -212,15 +237,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.inscriptionValidation);
+            this.Controls.Add(this.messageValidation);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.accepteRecevoirNouvautes);
+            this.Controls.Add(this.modificationValidation);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.inscriptionPassword);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.inscriptionUsername);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.inscriptionAdress);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.modificationPassword2);
+            this.Controls.Add(this.modificationPassword);
+            this.Controls.Add(this.modificationUsername2);
+            this.Controls.Add(this.modificationUsername);
+            this.Controls.Add(this.modificationAdress2);
+            this.Controls.Add(this.modificationAdress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -242,14 +269,16 @@
         private System.Windows.Forms.ToolStripMenuItem menuInscripion;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
-        private System.Windows.Forms.Label inscriptionPassword;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label inscriptionUsername;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label inscriptionAdress;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label modificationPassword2;
+        private System.Windows.Forms.TextBox modificationPassword;
+        private System.Windows.Forms.Label modificationUsername2;
+        private System.Windows.Forms.TextBox modificationUsername;
+        private System.Windows.Forms.Label modificationAdress2;
+        private System.Windows.Forms.TextBox modificationAdress;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button inscriptionValidation;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button modificationValidation;
+        private System.Windows.Forms.CheckBox accepteRecevoirNouvautes;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox messageValidation;
     }
 }

@@ -39,5 +39,12 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             FormAjouterFilm formAjouterFilm = new FormAjouterFilm();
             formAjouterFilm.ShowDialog();
         }
+
+        //Modification compte
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormModificationCompte formModificationCompte = new FormModificationCompte(this.membre);
+            formModificationCompte.ShowDialog();
+        }
     }
 }
