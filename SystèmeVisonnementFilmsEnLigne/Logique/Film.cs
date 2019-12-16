@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using SystèmeVisonnementFilmsEnLigne.DAL;
@@ -193,6 +194,24 @@ public class Film : DomainObject
             }
 
             return -1;
+        }
+
+
+        public static List<Film> getListFilm(string[] fields, string[] values)
+        {
+            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+            IFilmMapper filmMapper = dataMapper.GetFilmMapper();
+
+            DataTable listFilms = filmMapper.FindWithConditions(fields, values);
+
+            List<Film> result = new List<Film>();
+
+            foreach(DataRow row in listFilms.Rows)
+            {
+                Film filmAajouter = new Film(row["titre"].ToString(), (int)row["durée"], (int)row["coûtAchat"], (int)row["coûtVisionnement"], row["motsClès"].ToString(), row["réalisateurs"].ToString(), row["acteurs"].ToString(), row["maisonsProduction"].ToString(), row["producteurs"].ToString(), row["synopsis"].ToString());
+                result.Add(filmAajouter);
+            }
+            return result;
         }
     }
 }	

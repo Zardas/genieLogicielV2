@@ -34,14 +34,24 @@
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.titleSearch = new System.Windows.Forms.Label();
-            this.titleSearchCheckBox = new System.Windows.Forms.CheckBox();
-            this.dureeSearchCheckbox = new System.Windows.Forms.CheckBox();
-            this.dureeSearch = new System.Windows.Forms.Label();
-            this.categorieSearchCheckbox = new System.Windows.Forms.CheckBox();
-            this.categorieSearch = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rechercheFilmTitre = new System.Windows.Forms.TextBox();
+            this.rechercheFilmRealisateurs = new System.Windows.Forms.TextBox();
+            this.rechercheFilmMotCles = new System.Windows.Forms.TextBox();
+            this.rechercheFilmActeurs = new System.Windows.Forms.TextBox();
+            this.rechercheFilmMaisonsDeProduction = new System.Windows.Forms.TextBox();
+            this.rechercheFilmProducteurs = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip2
@@ -99,79 +109,13 @@
             this.label1.Text = "Titre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // titleSearch
-            // 
-            this.titleSearch.AutoSize = true;
-            this.titleSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.titleSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.titleSearch.Location = new System.Drawing.Point(121, 44);
-            this.titleSearch.Name = "titleSearch";
-            this.titleSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.titleSearch.Size = new System.Drawing.Size(36, 21);
-            this.titleSearch.TabIndex = 7;
-            this.titleSearch.Text = "Titre";
-            // 
-            // titleSearchCheckBox
-            // 
-            this.titleSearchCheckBox.AutoSize = true;
-            this.titleSearchCheckBox.Location = new System.Drawing.Point(159, 46);
-            this.titleSearchCheckBox.Name = "titleSearchCheckBox";
-            this.titleSearchCheckBox.Size = new System.Drawing.Size(47, 17);
-            this.titleSearchCheckBox.TabIndex = 9;
-            this.titleSearchCheckBox.Text = "Titre";
-            this.titleSearchCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // dureeSearchCheckbox
-            // 
-            this.dureeSearchCheckbox.AutoSize = true;
-            this.dureeSearchCheckbox.Location = new System.Drawing.Point(272, 47);
-            this.dureeSearchCheckbox.Name = "dureeSearchCheckbox";
-            this.dureeSearchCheckbox.Size = new System.Drawing.Size(55, 17);
-            this.dureeSearchCheckbox.TabIndex = 11;
-            this.dureeSearchCheckbox.Text = "Durée";
-            this.dureeSearchCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // dureeSearch
-            // 
-            this.dureeSearch.AutoSize = true;
-            this.dureeSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dureeSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dureeSearch.Location = new System.Drawing.Point(236, 44);
-            this.dureeSearch.Name = "dureeSearch";
-            this.dureeSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.dureeSearch.Size = new System.Drawing.Size(33, 21);
-            this.dureeSearch.TabIndex = 10;
-            this.dureeSearch.Text = "120";
-            // 
-            // categorieSearchCheckbox
-            // 
-            this.categorieSearchCheckbox.AutoSize = true;
-            this.categorieSearchCheckbox.Location = new System.Drawing.Point(409, 45);
-            this.categorieSearchCheckbox.Name = "categorieSearchCheckbox";
-            this.categorieSearchCheckbox.Size = new System.Drawing.Size(55, 17);
-            this.categorieSearchCheckbox.TabIndex = 13;
-            this.categorieSearchCheckbox.Text = "Durée";
-            this.categorieSearchCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // categorieSearch
-            // 
-            this.categorieSearch.AutoSize = true;
-            this.categorieSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.categorieSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.categorieSearch.Location = new System.Drawing.Point(350, 43);
-            this.categorieSearch.Name = "categorieSearch";
-            this.categorieSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.categorieSearch.Size = new System.Drawing.Size(56, 21);
-            this.categorieSearch.TabIndex = 12;
-            this.categorieSearch.Text = "Comédie";
-            // 
             // search
             // 
             this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
             this.search.Cursor = System.Windows.Forms.Cursors.Hand;
             this.search.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search.Location = new System.Drawing.Point(501, 36);
+            this.search.Location = new System.Drawing.Point(111, 277);
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(3);
             this.search.Size = new System.Drawing.Size(87, 32);
@@ -179,19 +123,163 @@
             this.search.Text = "Rechercher";
             this.search.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(58, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Titre :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 26);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Durée (en\r\nminutes) :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 150);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Réalisateurs :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Mots-Clés :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 239);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Producteurs :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(29, 200);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 26);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Maisons de\r\nproduction :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(43, 174);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Acteurs :";
+            // 
+            // rechercheFilmTitre
+            // 
+            this.rechercheFilmTitre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmTitre.Location = new System.Drawing.Point(98, 57);
+            this.rechercheFilmTitre.Name = "rechercheFilmTitre";
+            this.rechercheFilmTitre.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmTitre.TabIndex = 22;
+            this.rechercheFilmTitre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rechercheFilmRealisateurs
+            // 
+            this.rechercheFilmRealisateurs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmRealisateurs.Location = new System.Drawing.Point(98, 146);
+            this.rechercheFilmRealisateurs.Name = "rechercheFilmRealisateurs";
+            this.rechercheFilmRealisateurs.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmRealisateurs.TabIndex = 25;
+            this.rechercheFilmRealisateurs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rechercheFilmMotCles
+            // 
+            this.rechercheFilmMotCles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmMotCles.Location = new System.Drawing.Point(98, 120);
+            this.rechercheFilmMotCles.Name = "rechercheFilmMotCles";
+            this.rechercheFilmMotCles.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmMotCles.TabIndex = 24;
+            this.rechercheFilmMotCles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rechercheFilmActeurs
+            // 
+            this.rechercheFilmActeurs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmActeurs.Location = new System.Drawing.Point(98, 172);
+            this.rechercheFilmActeurs.Name = "rechercheFilmActeurs";
+            this.rechercheFilmActeurs.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmActeurs.TabIndex = 26;
+            this.rechercheFilmActeurs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rechercheFilmMaisonsDeProduction
+            // 
+            this.rechercheFilmMaisonsDeProduction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmMaisonsDeProduction.Location = new System.Drawing.Point(98, 206);
+            this.rechercheFilmMaisonsDeProduction.Name = "rechercheFilmMaisonsDeProduction";
+            this.rechercheFilmMaisonsDeProduction.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmMaisonsDeProduction.TabIndex = 27;
+            this.rechercheFilmMaisonsDeProduction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rechercheFilmProducteurs
+            // 
+            this.rechercheFilmProducteurs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rechercheFilmProducteurs.Location = new System.Drawing.Point(98, 236);
+            this.rechercheFilmProducteurs.Name = "rechercheFilmProducteurs";
+            this.rechercheFilmProducteurs.Size = new System.Drawing.Size(100, 20);
+            this.rechercheFilmProducteurs.TabIndex = 28;
+            this.rechercheFilmProducteurs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(98, 85);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDown1.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.label6.Location = new System.Drawing.Point(459, 55);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 20);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Catalogue";
+            // 
             // FormCatalogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.rechercheFilmProducteurs);
+            this.Controls.Add(this.rechercheFilmMaisonsDeProduction);
+            this.Controls.Add(this.rechercheFilmActeurs);
+            this.Controls.Add(this.rechercheFilmRealisateurs);
+            this.Controls.Add(this.rechercheFilmMotCles);
+            this.Controls.Add(this.rechercheFilmTitre);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.categorieSearchCheckbox);
-            this.Controls.Add(this.categorieSearch);
-            this.Controls.Add(this.dureeSearchCheckbox);
-            this.Controls.Add(this.dureeSearch);
-            this.Controls.Add(this.titleSearchCheckBox);
-            this.Controls.Add(this.titleSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip2);
             this.Name = "FormCatalogue";
@@ -199,6 +287,7 @@
             this.Text = "Catalogue";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,12 +300,21 @@
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label titleSearch;
-        private System.Windows.Forms.CheckBox titleSearchCheckBox;
-        private System.Windows.Forms.CheckBox dureeSearchCheckbox;
-        private System.Windows.Forms.Label dureeSearch;
-        private System.Windows.Forms.CheckBox categorieSearchCheckbox;
-        private System.Windows.Forms.Label categorieSearch;
         private System.Windows.Forms.Button search;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox rechercheFilmTitre;
+        private System.Windows.Forms.TextBox rechercheFilmRealisateurs;
+        private System.Windows.Forms.TextBox rechercheFilmMotCles;
+        private System.Windows.Forms.TextBox rechercheFilmActeurs;
+        private System.Windows.Forms.TextBox rechercheFilmMaisonsDeProduction;
+        private System.Windows.Forms.TextBox rechercheFilmProducteurs;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label6;
     }
 }

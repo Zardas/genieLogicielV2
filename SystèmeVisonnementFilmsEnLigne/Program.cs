@@ -26,7 +26,7 @@ namespace SystèmeVisonnementFilmsEnLigne
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
             }
-            //connexion.Close();
+            connexion.Close();
     
 
             Application.EnableVisualStyles();

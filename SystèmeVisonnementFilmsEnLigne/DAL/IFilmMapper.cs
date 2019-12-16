@@ -10,6 +10,9 @@ namespace SystèmeVisonnementFilmsEnLigne.DAL
 public interface IFilmMapper
  {
 	Film Find(Guid ID);
+
+        DataTable FindWithConditions(string[] fields, string[] values);
+
   DataTable FindAll();
    
 	int Insert(Film pFilm);

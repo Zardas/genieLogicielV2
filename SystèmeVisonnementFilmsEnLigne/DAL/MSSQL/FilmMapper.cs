@@ -34,6 +34,20 @@ namespace SystèmeVisonnementFilmsEnLigne.DAL.MSSQL
         }
 
 
+        public DataTable FindWithConditions(string[] fields, string[] values)
+        {
+            string where = "WHERE";
+            if(fields.Length == values.Length)
+            {
+                for (int i = 0; i < fields.Length; i++)
+                {
+                    where = where + " " + fields[i] + " = " + values[i];
+                }
+            }
+
+            return DataBase.Select("SELECT * FROM tblFilm WHERE " + where);
+        }
+
         //--------------------------------------------------------------------
         private Film FillFields(DataRow pDataRow)
         {
@@ -81,6 +95,7 @@ namespace SystèmeVisonnementFilmsEnLigne.DAL.MSSQL
         public DataTable FindAll()
         {
             return DataBase.SelectTable("[tblFilm]", "");
+
         }
 
 
