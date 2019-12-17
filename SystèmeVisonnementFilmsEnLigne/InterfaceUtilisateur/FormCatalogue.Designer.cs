@@ -51,7 +51,6 @@
             this.rechercheFilmDuree = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.rechercheResultat = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
@@ -266,26 +265,11 @@
             // rechercheResultat
             // 
             this.rechercheResultat.AutoSize = true;
-            this.rechercheResultat.Location = new System.Drawing.Point(384, 98);
+            this.rechercheResultat.Location = new System.Drawing.Point(400, 92);
             this.rechercheResultat.Name = "rechercheResultat";
-            this.rechercheResultat.Size = new System.Drawing.Size(126, 13);
+            this.rechercheResultat.Size = new System.Drawing.Size(107, 13);
             this.rechercheResultat.TabIndex = 31;
-            this.rechercheResultat.Text = "Nombre de résultats : Nul";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(360, 90);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(3);
-            this.button1.Size = new System.Drawing.Size(300, 30);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Rechercher";
-            this.button1.UseVisualStyleBackColor = false;
+            this.rechercheResultat.Text = "Nombre de résultats :";
             // 
             // button2
             // 
@@ -325,7 +309,6 @@
             this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.rechercheResultat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.rechercheFilmDuree);
@@ -380,7 +363,6 @@
         private System.Windows.Forms.NumericUpDown rechercheFilmDuree;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label rechercheResultat;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }

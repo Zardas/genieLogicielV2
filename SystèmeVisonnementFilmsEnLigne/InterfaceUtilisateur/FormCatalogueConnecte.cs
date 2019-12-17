@@ -11,52 +11,16 @@ using SystèmeVisonnementFilmsEnLigne.Logique;
 
 namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
-
-
-    public partial class FormCatalogue : Form
+    public partial class FormCatalogueConnecte : Form
     {
         private int LocationX = 360;
 
-        public FormCatalogue()
+        public FormCatalogueConnecte()
         {
             InitializeComponent();
             rechercheResultat.Text = "Aucune recherche";
         }
 
-        private void titre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuRechercherUnFilm_Click(object sender, EventArgs e)
-        {
-            FormCatalogue formCatalogue = new FormCatalogue();
-            formCatalogue.ShowDialog();
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            FormIndex formIndex = new FormIndex();
-            formIndex.ShowDialog();
-            this.Close();
-        }
-
-        private void menuAccueil_Click(object sender, EventArgs e)
-        {
-            FormIndex formIndex = new FormIndex();
-            formIndex.ShowDialog();
-            this.Close();
-        }
-
-        private void menuInscripion_Click(object sender, EventArgs e)
-        {
-            FormInscription formInscription = new FormInscription();
-            formInscription.ShowDialog();
-            this.Close();
-        }
-
-        //Recherche
         private void search_Click(object sender, EventArgs e)
         {
             List<string[]> param = new List<string[]>();
@@ -73,7 +37,7 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             List<Film> resultats = Film.rechercher(param);
             int LocationY = 90;
             //On créer tout les boutons en fonction du résultat de la requête
-            foreach(Film film in resultats)
+            foreach (Film film in resultats)
             {
                 Button btn = new Button();
                 btn.Location = new Point(this.LocationX, LocationY);

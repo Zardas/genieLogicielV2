@@ -101,6 +101,18 @@
     <Compile Include="DAL\MSSQL\VisionnementMapper.cs" />
     <Compile Include="DAL\MSSQL\VisiteurMapper.cs" />
     <Compile Include="GlobalConfig.cs" />
+    <Compile Include="InterfaceUtilisateur\FormDetailFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\FormDetailFilm.Designer.cs">
+      <DependentUpon>FormDetailFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\FormCatalogueConnecte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceUtilisateur\FormCatalogueConnecte.Designer.cs">
+      <DependentUpon>FormCatalogueConnecte.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceUtilisateur\FormAjouterFilm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +191,12 @@
     <Compile Include="Util.cs" />
     <EmbeddedResource Include="InterfaceUtilisateur\FormAjouterFilm.resx">
       <DependentUpon>FormAjouterFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\FormCatalogueConnecte.resx">
+      <DependentUpon>FormCatalogueConnecte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceUtilisateur\FormDetailFilm.resx">
+      <DependentUpon>FormDetailFilm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfaceUtilisateur\FormModificationCompte.resx">
       <DependentUpon>FormModificationCompte.cs</DependentUpon>
