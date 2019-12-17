@@ -134,14 +134,30 @@ public class Film : DomainObject
             		get { return mIDRéalisateur; }
             		set { mIDRéalisateur = value; }
         	}
-	public Film[] rechercher(string critères)
-    
-    {
-    // to add your business logic code of the operation
 
-    return null;
-    }
-  public int visionner()
+
+
+        public static List<Film> rechercher(List<string[]> param)
+        {
+            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
+            IFilmMapper filmMapper = dataMapper.GetFilmMapper();
+
+
+
+            DataTable listFilms = filmMapper.FindWithConditions(param);
+
+            List<Film> result = new List<Film>();
+
+            foreach (DataRow row in listFilms.Rows)
+            {
+                Film filmAajouter = new Film(row["titre"].ToString(), (int)row["durée"], (int)row["coûtAchat"], (int)row["coûtVisionnement"], row["motsClès"].ToString(), row["réalisateurs"].ToString(), row["acteurs"].ToString(), row["maisonsProduction"].ToString(), row["producteurs"].ToString(), row["synopsis"].ToString());
+                result.Add(filmAajouter);
+            }
+            return result;
+        }
+
+
+        public int visionner()
     
     {
     // to add your business logic code of the operation
@@ -197,22 +213,7 @@ public class Film : DomainObject
         }
 
 
-        public static List<Film> getListFilm(string[] fields, string[] values)
-        {
-            DataMapperFactory dataMapper = DataMapperFactory.GetDataMapperFactory();
-            IFilmMapper filmMapper = dataMapper.GetFilmMapper();
-
-            DataTable listFilms = filmMapper.FindWithConditions(fields, values);
-
-            List<Film> result = new List<Film>();
-
-            foreach(DataRow row in listFilms.Rows)
-            {
-                Film filmAajouter = new Film(row["titre"].ToString(), (int)row["durée"], (int)row["coûtAchat"], (int)row["coûtVisionnement"], row["motsClès"].ToString(), row["réalisateurs"].ToString(), row["acteurs"].ToString(), row["maisonsProduction"].ToString(), row["producteurs"].ToString(), row["synopsis"].ToString());
-                result.Add(filmAajouter);
-            }
-            return result;
-        }
+        
     }
 }	
        

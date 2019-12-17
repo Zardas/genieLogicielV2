@@ -11,7 +11,7 @@ public interface IFilmMapper
  {
 	Film Find(Guid ID);
 
-        DataTable FindWithConditions(string[] fields, string[] values);
+        DataTable FindWithConditions(List<string[]> param);
 
   DataTable FindAll();
    

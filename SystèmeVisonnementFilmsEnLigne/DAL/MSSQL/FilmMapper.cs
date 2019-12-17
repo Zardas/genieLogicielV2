@@ -34,15 +34,22 @@ namespace SystèmeVisonnementFilmsEnLigne.DAL.MSSQL
         }
 
 
-        public DataTable FindWithConditions(string[] fields, string[] values)
+        //Param contient une liste de tableau composé de {nomDuChamp, valeurDuChamp}
+        public DataTable FindWithConditions(List<string[]> param)
         {
-            string where = "WHERE";
-            if(fields.Length == values.Length)
+
+            string where = "";
+            bool premierPassage = true;
+            foreach(string[] row in param)
             {
-                for (int i = 0; i < fields.Length; i++)
+                if(premierPassage)
                 {
-                    where = where + " " + fields[i] + " = " + values[i];
-                }
+                    where = row[0] + "='" + row[1] + "'";
+                    premierPassage = false;
+                } else
+                {
+                    where = where + " AND " + row[0] + "='" + row[1] + "'";
+                } 
             }
 
             return DataBase.Select("SELECT * FROM tblFilm WHERE " + where);
