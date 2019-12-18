@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.rechercheResultat = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rechercheFilmDuree = new System.Windows.Forms.NumericUpDown();
@@ -46,46 +44,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.search = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.menuTitre = new System.Windows.Forms.Label();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDéconnexion = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.rechercheFilmDuree)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(360, 171);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(3);
-            this.button3.Size = new System.Drawing.Size(300, 30);
-            this.button3.TabIndex = 55;
-            this.button3.Text = "Rechercher";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(360, 131);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(3);
-            this.button2.Size = new System.Drawing.Size(300, 30);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Rechercher";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // rechercheResultat
             // 
@@ -237,40 +205,45 @@
             this.search.UseVisualStyleBackColor = false;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
-            // label1
+            // menuTitre
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(7, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Titre";
+            this.menuTitre.AutoSize = true;
+            this.menuTitre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.menuTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.menuTitre.Location = new System.Drawing.Point(7, 6);
+            this.menuTitre.Name = "menuTitre";
+            this.menuTitre.Size = new System.Drawing.Size(42, 17);
+            this.menuTitre.TabIndex = 36;
+            this.menuTitre.Text = "Titre";
+            this.menuTitre.Click += new System.EventHandler(this.menuTitre_Click);
             // 
             // menuAccueil
             // 
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
+            this.menuAccueil.Click += new System.EventHandler(this.menuAccueil_Click);
             // 
             // menuRechercherUnFilm
             // 
             this.menuRechercherUnFilm.Name = "menuRechercherUnFilm";
             this.menuRechercherUnFilm.Size = new System.Drawing.Size(134, 23);
             this.menuRechercherUnFilm.Text = "Rechercher un film";
+            this.menuRechercherUnFilm.Click += new System.EventHandler(this.menuRechercherUnFilm_Click);
             // 
             // menuInscripion
             // 
             this.menuInscripion.Name = "menuInscripion";
             this.menuInscripion.Size = new System.Drawing.Size(103, 23);
             this.menuInscripion.Text = "Mon Compte";
+            this.menuInscripion.Click += new System.EventHandler(this.menuInscripion_Click);
             // 
-            // menuConnexion
+            // menuDéconnexion
             // 
-            this.menuConnexion.Name = "menuConnexion";
-            this.menuConnexion.Size = new System.Drawing.Size(100, 23);
-            this.menuConnexion.Text = "Déconnexion";
+            this.menuDéconnexion.Name = "menuDéconnexion";
+            this.menuDéconnexion.Size = new System.Drawing.Size(100, 23);
+            this.menuDéconnexion.Text = "Déconnexion";
+            this.menuDéconnexion.Click += new System.EventHandler(this.menuDéconnexion_Click);
             // 
             // label5
             // 
@@ -286,7 +259,7 @@
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnexion,
+            this.menuDéconnexion,
             this.menuInscripion,
             this.menuRechercherUnFilm,
             this.menuAccueil});
@@ -303,8 +276,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.rechercheResultat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.rechercheFilmDuree);
@@ -321,7 +292,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuTitre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.menuStrip2);
             this.Name = "FormCatalogueConnecte";
@@ -336,9 +307,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label rechercheResultat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown rechercheFilmDuree;
@@ -355,11 +323,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button search;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label menuTitre;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuInscripion;
-        private System.Windows.Forms.ToolStripMenuItem menuConnexion;
+        private System.Windows.Forms.ToolStripMenuItem menuDéconnexion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MenuStrip menuStrip2;
     }

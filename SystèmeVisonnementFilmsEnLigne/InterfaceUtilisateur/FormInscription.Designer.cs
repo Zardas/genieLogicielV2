@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.menuTitre = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,17 +56,17 @@
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuTitre
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(7, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Titre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.menuTitre.AutoSize = true;
+            this.menuTitre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.menuTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.menuTitre.Location = new System.Drawing.Point(7, 6);
+            this.menuTitre.Name = "menuTitre";
+            this.menuTitre.Size = new System.Drawing.Size(42, 17);
+            this.menuTitre.TabIndex = 8;
+            this.menuTitre.Text = "Titre";
+            this.menuTitre.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStrip2
             // 
@@ -89,6 +89,7 @@
             this.menuConnexion.Name = "menuConnexion";
             this.menuConnexion.Size = new System.Drawing.Size(86, 23);
             this.menuConnexion.Text = "Connexion";
+            this.menuConnexion.Click += new System.EventHandler(this.menuConnexion_Click);
             // 
             // menuInscripion
             // 
@@ -375,7 +376,7 @@
             this.Controls.Add(this.inscriptionAdressLabel);
             this.Controls.Add(this.inscriptionAdress);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuTitre);
             this.Controls.Add(this.menuStrip2);
             this.Name = "FormInscription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -389,7 +390,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label menuTitre;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem menuConnexion;
         private System.Windows.Forms.ToolStripMenuItem menuInscripion;

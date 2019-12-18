@@ -62,3 +62,4 @@ C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnemen
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormAjouterFilm.resources
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormCatalogueConnecte.resources
 C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormDetailFilm.resources
+C:\Users\Antoine\Desktop\Scolaire\Master1Uqar\genieLogicielV2\SystèmeVisonnementFilmsEnLigne\obj\Debug\SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur.FormIndexConnecte.resources

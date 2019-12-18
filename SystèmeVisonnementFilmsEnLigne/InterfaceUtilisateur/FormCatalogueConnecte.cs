@@ -14,9 +14,11 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
     public partial class FormCatalogueConnecte : Form
     {
         private int LocationX = 360;
+        Membre membre;
 
-        public FormCatalogueConnecte()
+        public FormCatalogueConnecte(Membre membre)
         {
+            this.membre = membre;
             InitializeComponent();
             rechercheResultat.Text = "Aucune recherche";
         }
@@ -57,6 +59,42 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
         {
             FormDetailFilm formDetailFilm = new FormDetailFilm(film);
             formDetailFilm.ShowDialog();
+        }
+
+        private void menuTitre_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+
+        }
+
+        private void menuAccueil_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuRechercherUnFilm_Click(object sender, EventArgs e)
+        {
+            FormCatalogueConnecte formCatalogueConnecte = new FormCatalogueConnecte(this.membre);
+            formCatalogueConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuInscripion_Click(object sender, EventArgs e)
+        {
+            FormCompteMembre formCompteMembre = new FormCompteMembre(this.membre);
+            formCompteMembre.ShowDialog();
+            this.Close();
+        }
+
+        private void menuDéconnexion_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -48,7 +48,7 @@
             this.ajoutValidation = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDéconnexion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
@@ -301,13 +301,14 @@
             this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 44;
             this.label1.Text = "Titre";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStrip2
             // 
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnexion,
+            this.menuDéconnexion,
             this.menuInscripion,
             this.menuRechercherUnFilm,
             this.menuAccueil});
@@ -318,29 +319,33 @@
             this.menuStrip2.TabIndex = 43;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // menuConnexion
+            // menuDéconnexion
             // 
-            this.menuConnexion.Name = "menuConnexion";
-            this.menuConnexion.Size = new System.Drawing.Size(100, 23);
-            this.menuConnexion.Text = "Deconnexion";
+            this.menuDéconnexion.Name = "menuDéconnexion";
+            this.menuDéconnexion.Size = new System.Drawing.Size(100, 23);
+            this.menuDéconnexion.Text = "Deconnexion";
+            this.menuDéconnexion.Click += new System.EventHandler(this.menuDéconnexion_Click);
             // 
             // menuInscripion
             // 
             this.menuInscripion.Name = "menuInscripion";
             this.menuInscripion.Size = new System.Drawing.Size(100, 23);
             this.menuInscripion.Text = "Mon compte";
+            this.menuInscripion.Click += new System.EventHandler(this.menuInscripion_Click);
             // 
             // menuRechercherUnFilm
             // 
             this.menuRechercherUnFilm.Name = "menuRechercherUnFilm";
             this.menuRechercherUnFilm.Size = new System.Drawing.Size(134, 23);
             this.menuRechercherUnFilm.Text = "Rechercher un film";
+            this.menuRechercherUnFilm.Click += new System.EventHandler(this.menuRechercherUnFilm_Click);
             // 
             // menuAccueil
             // 
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
+            this.menuAccueil.Click += new System.EventHandler(this.menuAccueil_Click);
             // 
             // ajoutValide
             // 
@@ -440,7 +445,7 @@
         private System.Windows.Forms.Button ajoutValidation;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem menuConnexion;
+        private System.Windows.Forms.ToolStripMenuItem menuDéconnexion;
         private System.Windows.Forms.ToolStripMenuItem menuInscripion;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;

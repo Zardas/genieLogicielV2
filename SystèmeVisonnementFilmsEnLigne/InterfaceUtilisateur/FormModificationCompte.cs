@@ -31,8 +31,6 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
         //Retour au compte membre
         private void button3_Click(object sender, EventArgs e)
         {
-            FormCompteMembre formCompteMembre = new FormCompteMembre(this.membre);
-            formCompteMembre.ShowDialog();
             this.Close();
         }
 
@@ -50,6 +48,39 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 
             this.membre.updateMembre(updateParameters);
             messageValidation.Text = "Le compte a été modifié";
+        }
+
+        private void menuTitre_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuAccueil_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuRechercherUnFilm_Click(object sender, EventArgs e)
+        {
+            FormCatalogueConnecte formCatalogueConnecte = new FormCatalogueConnecte(this.membre);
+            formCatalogueConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuCompteClient_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Si on est là, c'est qu'il y a un FormCompteClient derrière
+        }
+
+        private void menuDeconnexion_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
         }
     }
 }

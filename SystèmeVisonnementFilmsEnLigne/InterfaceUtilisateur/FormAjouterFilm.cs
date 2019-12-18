@@ -13,8 +13,11 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
     public partial class FormAjouterFilm : Form
     {
-        public FormAjouterFilm()
+        Membre membre;
+
+        public FormAjouterFilm(Membre membre)
         {
+            this.membre = membre;
             InitializeComponent();
         }
 
@@ -51,6 +54,40 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
                 ajoutSynopsis.ForeColor = errorColor;
             }
      
+        }
+
+        //Retour au menu
+        private void label1_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuAccueil_Click(object sender, EventArgs e)
+        {
+            FormIndexConnecte formIndexConnecte = new FormIndexConnecte(this.membre);
+            formIndexConnecte.ShowDialog();
+            this.Close();
+        }
+
+        private void menuRechercherUnFilm_Click(object sender, EventArgs e)
+        {
+            FormCatalogueConnecte formCatalogue = new FormCatalogueConnecte(this.membre);
+            formCatalogue.ShowDialog();
+            this.Close();
+        }
+
+        private void menuInscripion_Click(object sender, EventArgs e)
+        {
+            this.Close(); //Si on est à ce niveau, c'est qu'on a le form de CompteMembre derrière
+        }
+
+        private void menuDéconnexion_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
         }
     }
 }

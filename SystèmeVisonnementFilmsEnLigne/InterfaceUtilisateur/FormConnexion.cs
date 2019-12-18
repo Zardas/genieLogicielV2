@@ -61,5 +61,40 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             this.Close();
 
         }
+
+        private void menuTitre_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
+        }
+
+        private void menuAccueil_Click(object sender, EventArgs e)
+        {
+            FormIndex formIndex = new FormIndex();
+            formIndex.ShowDialog();
+            this.Close();
+        }
+
+        private void menuRechercherUnFilm_Click(object sender, EventArgs e)
+        {
+            FormCatalogue formCatalogue = new FormCatalogue();
+            formCatalogue.ShowDialog();
+            this.Close();
+        }
+
+        private void menuInscripion_Click(object sender, EventArgs e)
+        {
+            FormInscription formInscription = new FormInscription();
+            formInscription.ShowDialog();
+            this.Close();
+        }
+
+        private void menuConnexion_Click(object sender, EventArgs e)
+        {
+            FormConnexion formConnexion = new FormConnexion();
+            formConnexion.ShowDialog();
+            this.Close();
+        }
     }
 }

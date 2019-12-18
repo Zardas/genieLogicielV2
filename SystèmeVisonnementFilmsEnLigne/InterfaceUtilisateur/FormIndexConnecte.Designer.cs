@@ -1,16 +1,16 @@
 ﻿namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
 {
-    partial class FormIndex
+    partial class FormIndexConnecte
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,21 +20,21 @@
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.buttonAccessCatalogue = new System.Windows.Forms.Button();
-            this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuInscription = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDéconnexion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuMonCompte = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu = new System.Windows.Forms.MenuStrip();
             this.menuTitre = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,24 +47,24 @@
             this.buttonAccessCatalogue.Location = new System.Drawing.Point(275, 152);
             this.buttonAccessCatalogue.Name = "buttonAccessCatalogue";
             this.buttonAccessCatalogue.Size = new System.Drawing.Size(202, 64);
-            this.buttonAccessCatalogue.TabIndex = 3;
+            this.buttonAccessCatalogue.TabIndex = 7;
             this.buttonAccessCatalogue.Text = "Accéder au catalogue";
             this.buttonAccessCatalogue.UseVisualStyleBackColor = false;
-            this.buttonAccessCatalogue.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAccessCatalogue.Click += new System.EventHandler(this.buttonAccessCatalogue_Click);
             // 
-            // menuConnexion
+            // menuDéconnexion
             // 
-            this.menuConnexion.Name = "menuConnexion";
-            this.menuConnexion.Size = new System.Drawing.Size(86, 23);
-            this.menuConnexion.Text = "Connexion";
-            this.menuConnexion.Click += new System.EventHandler(this.menuConnexion_Click);
+            this.menuDéconnexion.Name = "menuDéconnexion";
+            this.menuDéconnexion.Size = new System.Drawing.Size(100, 23);
+            this.menuDéconnexion.Text = "Déconnexion";
+            this.menuDéconnexion.Click += new System.EventHandler(this.menuDéconnexion_Click);
             // 
-            // menuInscription
+            // menuMonCompte
             // 
-            this.menuInscription.Name = "menuInscription";
-            this.menuInscription.Size = new System.Drawing.Size(85, 23);
-            this.menuInscription.Text = "Inscription";
-            this.menuInscription.Click += new System.EventHandler(this.menuInscription_Click);
+            this.menuMonCompte.Name = "menuMonCompte";
+            this.menuMonCompte.Size = new System.Drawing.Size(103, 23);
+            this.menuMonCompte.Text = "Mon Compte";
+            this.menuMonCompte.Click += new System.EventHandler(this.menuMonCompte_Click);
             // 
             // menuRechercherUnFilm
             // 
@@ -78,23 +78,7 @@
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
-            this.menuAccueil.Click += new System.EventHandler(this.accueilToolStripMenuItem1_Click);
-            // 
-            // menu
-            // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.menu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnexion,
-            this.menuInscription,
-            this.menuRechercherUnFilm,
-            this.menuAccueil});
-            this.menu.Location = new System.Drawing.Point(0, 0);
-            this.menu.Name = "menu";
-            this.menu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menu.Size = new System.Drawing.Size(784, 27);
-            this.menu.TabIndex = 2;
-            this.menu.Text = "menuStrip2";
+            this.menuAccueil.Click += new System.EventHandler(this.menuAccueil_Click);
             // 
             // menuTitre
             // 
@@ -104,23 +88,37 @@
             this.menuTitre.Location = new System.Drawing.Point(7, 6);
             this.menuTitre.Name = "menuTitre";
             this.menuTitre.Size = new System.Drawing.Size(42, 17);
-            this.menuTitre.TabIndex = 5;
+            this.menuTitre.TabIndex = 8;
             this.menuTitre.Text = "Titre";
-            this.menuTitre.Click += new System.EventHandler(this.label1_Click);
+            this.menuTitre.Click += new System.EventHandler(this.menuTitre_Click);
             // 
-            // FormIndex
+            // menu
+            // 
+            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.menu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuDéconnexion,
+            this.menuMonCompte,
+            this.menuRechercherUnFilm,
+            this.menuAccueil});
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menu.Size = new System.Drawing.Size(784, 27);
+            this.menu.TabIndex = 6;
+            this.menu.Text = "menuStrip2";
+            // 
+            // FormIndexConnecte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.menuTitre);
             this.Controls.Add(this.buttonAccessCatalogue);
+            this.Controls.Add(this.menuTitre);
             this.Controls.Add(this.menu);
-            this.Name = "FormIndex";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Title";
+            this.Name = "FormIndexConnecte";
+            this.Text = "Index";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -129,13 +127,13 @@
         }
 
         #endregion
+
         private System.Windows.Forms.Button buttonAccessCatalogue;
-        private System.Windows.Forms.ToolStripMenuItem menuConnexion;
-        private System.Windows.Forms.ToolStripMenuItem menuInscription;
+        private System.Windows.Forms.ToolStripMenuItem menuDéconnexion;
+        private System.Windows.Forms.ToolStripMenuItem menuMonCompte;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
-        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.Label menuTitre;
+        private System.Windows.Forms.MenuStrip menu;
     }
 }
-

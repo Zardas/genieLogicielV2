@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.menuTitre = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.menuConnexion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuInscripion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDeconnexion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCompteClient = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRechercherUnFilm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAccueil = new System.Windows.Forms.ToolStripMenuItem();
             this.modificationPassword2 = new System.Windows.Forms.Label();
@@ -48,24 +48,25 @@
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuTitre
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(7, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Titre";
+            this.menuTitre.AutoSize = true;
+            this.menuTitre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
+            this.menuTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.menuTitre.Location = new System.Drawing.Point(7, 6);
+            this.menuTitre.Name = "menuTitre";
+            this.menuTitre.Size = new System.Drawing.Size(42, 17);
+            this.menuTitre.TabIndex = 10;
+            this.menuTitre.Text = "Titre";
+            this.menuTitre.Click += new System.EventHandler(this.menuTitre_Click);
             // 
             // menuStrip2
             // 
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(146)))), ((int)(((byte)(46)))));
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnexion,
-            this.menuInscripion,
+            this.menuDeconnexion,
+            this.menuCompteClient,
             this.menuRechercherUnFilm,
             this.menuAccueil});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
@@ -75,29 +76,33 @@
             this.menuStrip2.TabIndex = 9;
             this.menuStrip2.Text = "menuStrip2";
             // 
-            // menuConnexion
+            // menuDeconnexion
             // 
-            this.menuConnexion.Name = "menuConnexion";
-            this.menuConnexion.Size = new System.Drawing.Size(100, 23);
-            this.menuConnexion.Text = "Deconnexion";
+            this.menuDeconnexion.Name = "menuDeconnexion";
+            this.menuDeconnexion.Size = new System.Drawing.Size(100, 23);
+            this.menuDeconnexion.Text = "Deconnexion";
+            this.menuDeconnexion.Click += new System.EventHandler(this.menuDeconnexion_Click);
             // 
-            // menuInscripion
+            // menuCompteClient
             // 
-            this.menuInscripion.Name = "menuInscripion";
-            this.menuInscripion.Size = new System.Drawing.Size(100, 23);
-            this.menuInscripion.Text = "Mon compte";
+            this.menuCompteClient.Name = "menuCompteClient";
+            this.menuCompteClient.Size = new System.Drawing.Size(100, 23);
+            this.menuCompteClient.Text = "Mon compte";
+            this.menuCompteClient.Click += new System.EventHandler(this.menuCompteClient_Click);
             // 
             // menuRechercherUnFilm
             // 
             this.menuRechercherUnFilm.Name = "menuRechercherUnFilm";
             this.menuRechercherUnFilm.Size = new System.Drawing.Size(134, 23);
             this.menuRechercherUnFilm.Text = "Rechercher un film";
+            this.menuRechercherUnFilm.Click += new System.EventHandler(this.menuRechercherUnFilm_Click);
             // 
             // menuAccueil
             // 
             this.menuAccueil.Name = "menuAccueil";
             this.menuAccueil.Size = new System.Drawing.Size(63, 23);
             this.menuAccueil.Text = "Accueil";
+            this.menuAccueil.Click += new System.EventHandler(this.menuAccueil_Click);
             // 
             // modificationPassword2
             // 
@@ -248,7 +253,7 @@
             this.Controls.Add(this.modificationUsername);
             this.Controls.Add(this.modificationAdress2);
             this.Controls.Add(this.modificationAdress);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuTitre);
             this.Controls.Add(this.menuStrip2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FormModificationCompte";
@@ -263,10 +268,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label menuTitre;
         private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem menuConnexion;
-        private System.Windows.Forms.ToolStripMenuItem menuInscripion;
+        private System.Windows.Forms.ToolStripMenuItem menuDeconnexion;
+        private System.Windows.Forms.ToolStripMenuItem menuCompteClient;
         private System.Windows.Forms.ToolStripMenuItem menuRechercherUnFilm;
         private System.Windows.Forms.ToolStripMenuItem menuAccueil;
         private System.Windows.Forms.Label modificationPassword2;
