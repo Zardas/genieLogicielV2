@@ -70,13 +70,69 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             } else
             {
                 Color errorColor = Color.FromArgb(240, 10, 10);
-                inscriptionAdress.ForeColor = errorColor;
-                usernameInscription.ForeColor = errorColor;
-                inscriptionPassword.ForeColor = errorColor;
-                inscriptionName.ForeColor = errorColor;
-                inscriptionPrenom.ForeColor = errorColor;
-                inscriptionTelephone.ForeColor = errorColor;
-                inscriptionAdressIRL.ForeColor = errorColor;
+                Color normalColor = Color.FromArgb(255, 255, 255);
+
+                if (!(inscriptionAdress.Text.Contains("@") && inscriptionAdress.Text.Contains(".")))
+                {
+                    inscriptionAdress.BackColor = errorColor;
+                } else
+                {
+                    inscriptionAdress.BackColor = normalColor;
+                }
+
+
+                if (usernameInscription.Text == "")
+                {
+                    usernameInscription.BackColor = errorColor;
+                } else
+                {
+                    usernameInscription.BackColor = normalColor;
+                }
+
+                if (inscriptionPassword.Text == "")
+                {
+                    inscriptionPassword.BackColor = errorColor;
+                }
+                else
+                {
+                    inscriptionPassword.BackColor = normalColor;
+                }
+
+                if (inscriptionName.Text == "")
+                {
+                    inscriptionName.BackColor = errorColor;
+                }
+                else
+                {
+                    inscriptionName.BackColor = normalColor;
+                }
+
+                if (inscriptionPrenom.Text == "")
+                {
+                    inscriptionPrenom.BackColor = errorColor;
+                }
+                else
+                {
+                    inscriptionPrenom.BackColor = normalColor;
+                }
+
+                if (inscriptionTelephone.Text == "")
+                {
+                    inscriptionTelephone.BackColor = errorColor;
+                }
+                else
+                {
+                    inscriptionTelephone.BackColor = normalColor;
+                }
+
+                if (inscriptionAdressIRL.Text == "")
+                {
+                    inscriptionAdressIRL.BackColor = errorColor;
+                }
+                else
+                {
+                    inscriptionAdressIRL.BackColor = normalColor;
+                }
             }
             
         }

@@ -41,9 +41,23 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
                 this.Close();
             } else
             {
+                Color errorColor = Color.FromArgb(240, 10, 10);
+                Color normalColor = Color.FromArgb(255, 255, 255);
                 //On change le texte des labels en rouge
-                inscriptionAdress.ForeColor = Color.FromArgb(240, 10, 10);
-                inscriptionPassword.ForeColor = Color.FromArgb(240, 10, 10);
+                if (!(inscriptionAdress.Text.Contains("@") && inscriptionAdress.Text.Contains(".")))
+                {
+                    inscriptionAdress.BackColor = errorColor;
+                } else
+                {
+                    inscriptionAdress.BackColor = normalColor;
+                }
+                if (inscriptionPassword.Text == "")
+                {
+                    inscriptionPassword.BackColor = errorColor;
+                } else
+                {
+                    inscriptionPassword.BackColor = normalColor;
+                }
             }
             
         }

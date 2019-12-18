@@ -42,16 +42,87 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             } else
             {
                 Color errorColor = Color.FromArgb(240, 10, 10);
-                ajoutTitre.ForeColor = errorColor;
-                ajoutDuree.ForeColor = errorColor;
-                ajoutCoutAchat.ForeColor = errorColor;
-                ajoutCoutVisionnement.ForeColor = errorColor;
-                ajoutMotCles.ForeColor = errorColor;
-                ajoutRealisateur.ForeColor = errorColor;
-                ajoutProducteur.ForeColor = errorColor;
-                ajoutMaisonDeProduction.ForeColor = errorColor;
-                ajoutActeur.ForeColor = errorColor;
-                ajoutSynopsis.ForeColor = errorColor;
+                Color normalColor = Color.FromArgb(255, 255, 255);
+
+                if (ajoutTitre.Text == "")
+                {
+                    ajoutTitre.BackColor = errorColor;
+                } else
+                {
+                    ajoutTitre.BackColor = normalColor;
+                }
+
+                if (ajoutDuree.Value == 0)
+                {
+                    ajoutDuree.BackColor = errorColor;
+                } else
+                {
+                    ajoutDuree.BackColor = normalColor;
+                }
+
+                if (ajoutCoutAchat.Value == 0)
+                {
+                    ajoutCoutAchat.BackColor = errorColor;
+                } else
+                {
+                    ajoutCoutAchat.BackColor = normalColor;
+                }
+
+                if (ajoutCoutVisionnement.Value == 0)
+                {
+                    ajoutCoutVisionnement.BackColor = errorColor;
+                } else
+                {
+                    ajoutCoutVisionnement.BackColor = normalColor;
+                }
+
+                if (ajoutMotCles.Text == "")
+                {
+                    ajoutMotCles.BackColor = errorColor;
+                } else
+                {
+                    ajoutMotCles.BackColor = normalColor;
+                }
+
+                if (ajoutRealisateur.Text == "")
+                {
+                    ajoutRealisateur.BackColor = errorColor;
+                } else
+                {
+                    ajoutRealisateur.BackColor = normalColor;
+                }
+
+                if (ajoutProducteur.Text == "")
+                {
+                    ajoutProducteur.BackColor = errorColor;
+                } else
+                {
+                    ajoutProducteur.BackColor = normalColor;
+                }
+
+                if (ajoutMaisonDeProduction.Text == "")
+                {
+                    ajoutMaisonDeProduction.BackColor = errorColor;
+                } else
+                {
+                    ajoutMaisonDeProduction.BackColor = normalColor;
+                }
+
+                if (ajoutActeur.Text == "")
+                {
+                    ajoutActeur.BackColor = errorColor;
+                } else
+                {
+                    ajoutActeur.BackColor = normalColor;
+                }
+
+                if (ajoutSynopsis.Text == "")
+                {
+                    ajoutSynopsis.BackColor = errorColor;
+                } else
+                {
+                    ajoutSynopsis.BackColor = normalColor;
+                }
             }
      
         }
