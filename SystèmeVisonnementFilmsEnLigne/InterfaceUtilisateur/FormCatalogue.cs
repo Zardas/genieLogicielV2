@@ -20,7 +20,7 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
         public FormCatalogue()
         {
             InitializeComponent();
-            rechercheResultat.Text = "Aucune recherche";
+            //rechercheResultat.Text = "Aucune recherche";
         }
 
         private void titre_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace SystèmeVisonnementFilmsEnLigne.InterfaceUtilisateur
             rechercheResultat.Text = "Nombre de résultats = " + Film.rechercher(param).Count;
 
             List<Film> resultats = Film.rechercher(param);
-            int LocationY = 90;
+            int LocationY = 130;
             //On créer tout les boutons en fonction du résultat de la requête
             foreach(Film film in resultats)
             {

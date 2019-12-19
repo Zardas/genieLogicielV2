@@ -266,14 +266,15 @@
             this.rechercheResultat.AutoSize = true;
             this.rechercheResultat.Location = new System.Drawing.Point(400, 92);
             this.rechercheResultat.Name = "rechercheResultat";
-            this.rechercheResultat.Size = new System.Drawing.Size(107, 13);
+            this.rechercheResultat.Size = new System.Drawing.Size(95, 13);
             this.rechercheResultat.TabIndex = 31;
-            this.rechercheResultat.Text = "Nombre de résultats :";
+            this.rechercheResultat.Text = "Aucune recherche";
             // 
             // FormCatalogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(220)))), ((int)(((byte)(218)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.rechercheResultat);

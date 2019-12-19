@@ -161,9 +161,9 @@
             this.modificationAdress2.Location = new System.Drawing.Point(275, 108);
             this.modificationAdress2.Name = "modificationAdress2";
             this.modificationAdress2.Padding = new System.Windows.Forms.Padding(3);
-            this.modificationAdress2.Size = new System.Drawing.Size(102, 19);
+            this.modificationAdress2.Size = new System.Drawing.Size(94, 19);
             this.modificationAdress2.TabIndex = 17;
-            this.modificationAdress2.Text = "Adresse courrielle :";
+            this.modificationAdress2.Text = "Adresse courriel :";
             // 
             // modificationAdress
             // 
